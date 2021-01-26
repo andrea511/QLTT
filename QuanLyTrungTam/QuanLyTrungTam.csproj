@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE8A2756-4E54-414A-AA63-776A14346CE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QuanLyTrungTam</RootNamespace>
+    <AssemblyName>QuanLyTrungTam</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Mail">
+      <HintPath>E:\Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="QuanLyNhaHang_Entity">
+      <HintPath>..\QuanLyNhaHang_Entity\bin\Debug\QuanLyNhaHang_Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="QuanLyTrungTam_BUS">
+      <HintPath>..\QuanLyTrungTam_BUS\bin\Debug\QuanLyTrungTam_BUS.dll</HintPath>
+    </Reference>
+    <Reference Include="QuanLyTrungTam_Data">
+      <HintPath>..\QuanLyTrungTam_BUS\bin\Debug\QuanLyTrungTam_Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChiTiet_HocSinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChiTiet_HocSinh.Designer.cs">
+      <DependentUpon>ChiTiet_HocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhSachLop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DanhSachLop.Designer.cs">
+      <DependentUpon>DanhSachLop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiemDanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiemDanh.Designer.cs">
+      <DependentUpon>DiemDanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hash.cs" />
+    <Compile Include="HinhAnh.cs" />
+    <Compile Include="HocPhi_Thang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HocPhi_Thang.Designer.cs">
+      <DependentUpon>HocPhi_Thang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichDay_Tuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LichDay_Tuan.Designer.cs">
+      <DependentUpon>LichDay_Tuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichHoc_Tuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LichHoc_Tuan.Designer.cs">
+      <DependentUpon>LichHoc_Tuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LopDay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LopDay.Designer.cs">
+      <DependentUpon>LopDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LopHoc_DangHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LopHoc_DangHoc.Designer.cs">
+      <DependentUpon>LopHoc_DangHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Mail.Designer.cs">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyGiaoVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyHocSinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyHocSinh.Designer.cs">
+      <DependentUpon>QuanLyHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyLichHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyLichHoc.Designer.cs">
+      <DependentUpon>QuanLyLichHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyLopHoc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyLopHoc.Designer.cs">
+      <DependentUpon>QuanLyLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChiTiet_GiaoVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChiTiet_GiaoVien.Designer.cs">
+      <DependentUpon>ChiTiet_GiaoVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ThongTinTaiKhoan.Designer.cs">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLy_ThuHocPhi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuanLy_ThuHocPhi.Designer.cs">
+      <DependentUpon>QuanLy_ThuHocPhi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrangChu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TrangChu.Designer.cs">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChiTiet_HocSinh.resx">
+      <DependentUpon>ChiTiet_HocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachLop.resx">
+      <DependentUpon>DanhSachLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiemDanh.resx">
+      <DependentUpon>DiemDanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HocPhi_Thang.resx">
+      <DependentUpon>HocPhi_Thang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichDay_Tuan.resx">
+      <DependentUpon>LichDay_Tuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichHoc_Tuan.resx">
+      <DependentUpon>LichHoc_Tuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LopDay.resx">
+      <DependentUpon>LopDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LopHoc_DangHoc.resx">
+      <DependentUpon>LopHoc_DangHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mail.resx">
+      <DependentUpon>Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanLyGiaoVien.resx">
+      <DependentUpon>QuanLyGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyHocSinh.resx">
+      <DependentUpon>QuanLyHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyLichHoc.resx">
+      <DependentUpon>QuanLyLichHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyLopHoc.resx">
+      <DependentUpon>QuanLyLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChiTiet_GiaoVien.resx">
+      <DependentUpon>ChiTiet_GiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinTaiKhoan.resx">
+      <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLy_ThuHocPhi.resx">
+      <DependentUpon>QuanLy_ThuHocPhi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangChu.resx">
+      <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-activity-history-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-multiply-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-menu-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HV.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-double-left-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-double-right-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gia-su-an-khanh-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exit-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-account-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-google-classroom-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-teacher-hiring-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-schedule-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ok-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-loading-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-32 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-subtract-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4bf2e863380c26afce61fa97c2c71401eadd5656.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-right-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-return-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-money-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-important-mail-24.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

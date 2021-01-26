@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\bin\Debug\QuanLyNhaHang_Entity.dll
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\bin\Debug\QuanLyNhaHang_Entity.pdb
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\obj\Debug\QuanLyTrungTam_Entity.csprojAssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\obj\Debug\QuanLyTrungTam_Entity.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\obj\Debug\QuanLyNhaHang_Entity.dll
+C:\Users\Admin\source\repos\QuanLyTrungTam\QuanLyNhaHang_Entity\obj\Debug\QuanLyNhaHang_Entity.pdb
